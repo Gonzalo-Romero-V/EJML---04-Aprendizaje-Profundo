@@ -1,0 +1,12 @@
+# Ejercicio 4 - Aprendizaje Profundo
+# Entorno: python -m venv venv ; pip install -r requirements.txt
+# Versiones fijadas para reproducibilidad. El entrenamiento real (CNN 40 epocas
+# + fine-tuning de MobileNetV2) es GPU-intensivo y esta pensado para Google Colab;
+# en CPU local conviene reducir las epocas en pipeline/config.py.
+tensorflow==2.21.0      # Keras 3 incluido: CNN, MobileNetV2, BatchNorm, EarlyStopping
+numpy==2.4.6
+scikit-learn==1.9.0     # precision/recall/F1 por clase, matriz de confusion
+pandas==3.0.3           # tabla comparativa de los 3 modelos
+matplotlib==3.10.9      # curvas, matrices, Grad-CAM, imagenes mal clasificadas
+pillow==12.2.0          # carga y redimension de imagenes
+jupyter                 # notebook de analisis

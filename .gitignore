@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+
+# Entorno virtual (no se versiona; se reconstruye con requirements.txt)
+venv/
+.venv/
+.ipynb_checkpoints/
+
+# Datos pesados: dataset descargado, zip y modelos entrenados (.gitkeep preserva
+# la carpeta). El dataset se reconstruye con scripts/preparar_dataset.py.
+/data/*
+!/data/.gitkeep
+*.zip
+*.keras
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npy
+*.npz
+
+# Figuras y resumen generados por el pipeline (se regeneran con: python main.py)
+/docs/figuras/*
+!/docs/figuras/.gitkeep
+
+# macOS / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
